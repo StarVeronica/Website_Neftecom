@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <style>
+      header,
+      main,
+      article,
+      aside,
+      footer,
+      section,
+      div,
+      p {
+        display: flex;
+      }
+      article,
+      section,
+      p {
+        margin: 10px;
+      }
+
+      header,
+      footer {
+        background-color: rgb(224, 224, 224);
+      }
+      section {
+        background-color: white;
+      }
+      aside {
+        background-color: rgb(221, 236, 203);
+      }
+      main {
+        background-color: rgb(255, 248, 227);
+      }
+      article {
+        background-color: rgb(254, 234, 185);
+      }
+      p {
+        font-weight: bold;
+      }
+
+      .main {
+        flex-flow: column wrap;
+        flex-grow: 1;
+      }
+      .aside {
+        flex-shrink: 1;
+      }
+      .article {
+        flex-grow: 1;
+      }
+      .section {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <p>Шапка страницы</p>
+    </header>
+    <div class="main_aside">
+      <main class="main">
+        <p>Основная часть</p>
+        <div class="more1_more2">
+          <article class="article">
+            <p>Ещё 1</p>
+          </article>
+          <article class="article">
+            <p>Ещё 2</p>
+          </article>
+        </div>
+        <article class="article">
+          <p>Ещё 3</p>
+        </article>
+      </main>
+      <aside class="aside"><p>Боковая область</p></aside>
+    </div>
+    <footer class="footer">
+      <section class="section"><p>Секция 1</p></section>
+      <section class="section"><p>Секция 2</p></section>
+      <section class="section"><p>Секция 3</p></section>
+      <section class="section"><p>Секция 4</p></section>
+    </footer>
+  </body>
+</html>
